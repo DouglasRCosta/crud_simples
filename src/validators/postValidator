@@ -1,0 +1,22 @@
+const { checkSchema } = require("express-validator");
+
+module.exports = {
+  create: checkSchema({
+    title: {
+      isLength: {
+        options: { min: 3 },
+        errorMessage: "O título deve ter pelo menos 3 caracteres",
+      },
+      trim: true,
+    },
+    content: {
+      isLength: {
+        options: { min: 3 },
+        errorMessage: "O texto deve ter pelo menos 3 caracteres",
+      },
+      trim: true,
+    },
+   
+  
+  }),
+};
