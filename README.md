@@ -7,10 +7,10 @@ npm i
 
 npm run dev
 
-altere cedencias necessária no .env
+altere as credencias necessária no .env
 
 
-foi usa o postman com body em raw, mas pose ser usado outro ou fazendo em node mesmo.
+foi usado o postman com body em raw, mas pode ser usado outro ou fazendo em node mesmo.
 
 
 
