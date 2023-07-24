@@ -8,7 +8,7 @@ const postController = require("../controller/postController");
 const userEditValidator = require("../validators/userEditValidator");
 const authenticateToken = require("../middleware/authenticateToken");
 const postValidator = require("../validators/postValidator");
-
+/*
 const test = async () => {
   try {
     await db.authenticate();
@@ -16,7 +16,7 @@ const test = async () => {
     initialize();
   }
 };
-test();
+test();*/
 routes.get("/", async (req, res) => {
   res.send("hello");
 });
