@@ -13,7 +13,9 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/',routes)
-
+//app.use('/',routes)
+app.get("/",(req, res) => {
+  res.send("hello");
+});
 
 app.listen(process.env.SERVER_PORT)
